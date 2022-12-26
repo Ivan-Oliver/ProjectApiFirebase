@@ -1,0 +1,2 @@
+# proyect
+<!--No hemos conseguido conectar el dashboard con el html details. Y en la segunda llamada no rescatábamos los libros de cada categoría usando ${list_name} dentro de la URL cuando hacemos el fetch...de mil formas y maneras y nada, una pena 😔😔😔 -->

@@ -1,0 +1,210 @@
+body {
+    padding: 50px;
+}
+
+header {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+hr {
+    border: 1px solid;
+    width: 100%;
+}
+
+h1{
+    font-size: 2em;
+    font-family: namata medium; 
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.best{
+    background-color: black;
+    max-width: 50%;
+}
+
+h3{
+    font-family: namata medium; 
+    color: rgb(72, 54, 54);
+    
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+
+.sellers{
+    text-align: right;
+    padding-right: 15px;
+    font-size: 80px;
+    font-family: impact;
+    color: white;
+}
+
+.r{
+    font-size: 0.3em;
+}
+
+.boton{
+    padding-top: 20px;
+    size-adjust: 20px;
+}
+
+
+.button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;	
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: red;
+        border: none;
+        box-shadow: 0 2px #999;
+ }
+
+
+h4{
+    font-family: namata medium; 
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 15px;
+    color:rgb(91, 69, 69);   
+}
+
+img{
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 170px;
+    height: 250px;
+}
+
+.titulo{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.texto{
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+.buyButton{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: orange;
+    border: none;
+    box-shadow: 0 2px #999;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.button:hover {background-color: #950505}
+.button:active {
+    background-color: #950505;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+button:hover {background-color: rgb(146, 97, 6)}
+button:active {
+    background-color: rgb(146, 97, 6);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.fa-angle-left{
+    font-size: 15px;
+}
+
+.fa-circle-play{
+    color: white;
+}
+
+.buttonDetails {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: 1px solid #aaaaaa;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: 0 5px #666;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        margin-left: 0;
+    }
+
+    .best {
+        max-width: 100%;
+    }
+
+    .sellers {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .padre {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        margin-left: 0;
+    }
+
+
+    .sellers {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .padre {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .caja {
+        max-width: 250px;
+    }
+}
+
+
+
+ 
+
+ 
+ 
