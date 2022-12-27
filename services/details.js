@@ -18,34 +18,32 @@ async function callBookDetails() {
     for (const book of bookDetails.results.books) {
 
         const actualDetailBook = bookDetailsInfo.appendChild(document.createElement('div'))
-        actualDetailBook.setAttribute("id", "allBooks")
         actualDetailBook.setAttribute("class", "caja")
 
 
         const titleBooks = book.title
         const allTitleBook = document.createElement('h4')
-        allTitleBook.setAttribute("id", "titleBook")
+        allTitleBook.setAttribute("class", "titleBook")
         allTitleBook.innerText = titleBooks
 
         const imgBook = book.book_image
         const showImg = document.createElement('img')
         showImg.setAttribute("src", imgBook)
-        showImg.setAttribute("id", "imgBooks")
+        showImg.setAttribute("class", "imgBooks")
 
         const weekList = book.weeks_on_list
         const elementWeekList = document.createElement('p')
-        elementWeekList.setAttribute("id", "weekList")
         elementWeekList.setAttribute("class", "titulo")
         elementWeekList.innerText = "Week on list: " + weekList
 
         const descriptionBook = book.description
         const elementDescription = document.createElement('p')
-        elementDescription.setAttribute("id", "descriptionBook")
         elementDescription.setAttribute("class", "texto")
         elementDescription.innerText = descriptionBook
 
-        const amazonButton = document.createElement('button')
+        const amazonButton = document.createElement('a')
         amazonButton.setAttribute("class", "buyButton")
+        amazonButton.setAttribute("href", book.amazon_product_url)
         const buttonAmazonText = "BUY AT AMAZON"
         const amazonIcon = document.createElement('i')
         amazonIcon.setAttribute("class", "fa-regular fa-circle-play")

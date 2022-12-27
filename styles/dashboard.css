@@ -9,9 +9,14 @@ header {
 }
 
 hr {
-    border: 1px solid;
+    border: 0,5px solid;
     width: 100%;
 }
+
+p{
+    color: #666;
+}
+
 
 h1{
     font-size: 2em;
@@ -24,16 +29,19 @@ h1{
     background-color: black;
     max-width: 50%;
 }
-
-h3{
-    font-family: namata medium; 
-    color: rgb(72, 54, 54);
-    
-    font-size: 30px;
-    padding-top: 15px;
-    font-weight: bolder;
+i{
+    color: #000000;
+    font-size: 19px;
 }
-
+h3{
+    font-family: Arial, Helvetica, sans-serif ; 
+    color: rgb(90, 69, 69);
+    font-size: 20px;
+    padding-top: 15px;
+}
+p{
+    padding-top: 10px;
+}
 .sellers{
     text-align: right;
     padding-right: 15px;
@@ -136,14 +144,16 @@ button:active {
 }
 
 .buttonDetails {
-    margin-top: 10px;
-    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 7px 15px;
     border: 1px solid #aaaaaa;
     width: fit-content;
-    border-radius: 5px;
+    border-radius: 3px;
     text-decoration: none;
-    color: #000000;
-    box-shadow: 0 5px #666;
+    color: #704d4d;
+    box-shadow: 0 1px  #666;
 }
 
 

@@ -1,6 +1,8 @@
+
+
 .padre{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 15px 25px;
     gap: 15px;
     flex-wrap: wrap;
