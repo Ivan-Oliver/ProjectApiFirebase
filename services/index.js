@@ -5,13 +5,13 @@ async function fetchAllData() {
    const list = await fetchListBooks()
    spinnerElement.setAttribute('class', 'hidden')
    allBooks.removeAttribute('class', 'hidden')
-   allBooks.setAttribute('class', 'padre')
+   allBooks.setAttribute('class', 'parentbox')
 
    for (let i = 0; i < list.length; i++) {
 
       const item = list[i]
       const actualListElementContainer = document.createElement('div')
-      actualListElementContainer.setAttribute("class", "caja")
+      actualListElementContainer.setAttribute("class", "box")
 
       const elementTitle = document.createElement('h3')
       elementTitle.setAttribute("class", "title")
@@ -34,7 +34,7 @@ async function fetchAllData() {
       button.setAttribute("class", "buttonDetails")
 
       button.setAttribute("href", "../views/details.html")
-      button.innerText = ("READ MORE! ")
+      button.innerText = ("READ MORE!")
       const buttonIcon = document.createElement('i')
       buttonIcon.setAttribute('class', 'fa-solid fa-angle-right')
       button.appendChild(buttonIcon)

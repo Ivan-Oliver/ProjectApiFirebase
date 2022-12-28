@@ -1,6 +1,6 @@
 
 
-.padre{
+.parentbox{
     display: flex;
     justify-content: flex-start;
     margin: 15px 25px;
@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 
-.caja{
+.box{
     display: flex;
     flex-direction: column;
     padding: 15px;

@@ -9,7 +9,7 @@ async function callBookDetails() {
 
     spinnerElement.setAttribute('class', 'hidden')
     bookDetailsInfo.removeAttribute('class', 'hidden')
-    bookDetailsInfo.setAttribute('class', 'padre')
+    bookDetailsInfo.setAttribute('class', 'parentbox')
 
     const listNameBook = document.createElement('h4')
     listNameBook.setAttribute("id", "listBookName")
@@ -18,7 +18,7 @@ async function callBookDetails() {
     for (const book of bookDetails.results.books) {
 
         const actualDetailBook = bookDetailsInfo.appendChild(document.createElement('div'))
-        actualDetailBook.setAttribute("class", "caja")
+        actualDetailBook.setAttribute("class", "box")
 
 
         const titleBooks = book.title
@@ -33,12 +33,12 @@ async function callBookDetails() {
 
         const weekList = book.weeks_on_list
         const elementWeekList = document.createElement('p')
-        elementWeekList.setAttribute("class", "titulo")
+        elementWeekList.setAttribute("class", "title")
         elementWeekList.innerText = "Week on list: " + weekList
 
         const descriptionBook = book.description
         const elementDescription = document.createElement('p')
-        elementDescription.setAttribute("class", "texto")
+        elementDescription.setAttribute("class", "text")
         elementDescription.innerText = descriptionBook
 
         const amazonButton = document.createElement('a')

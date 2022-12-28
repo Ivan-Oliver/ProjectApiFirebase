@@ -90,13 +90,13 @@ img{
     height: 250px;
 }
 
-.titulo{
+.title{
     margin-top: 10px;
     margin-left: 5px;
     font-style: italic;
 }
 
-.texto{
+.text{
     margin-top: 25px;
     margin-left: 5px;
     margin-right: 10px;
@@ -178,7 +178,7 @@ button:active {
         font-size: 18px;
     }
 
-    .padre {
+    .parentbox {
         flex-direction: column;
     }
 }
@@ -201,13 +201,13 @@ button:active {
         font-size: 18px;
     }
 
-    .padre {
+    .parentbox {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: left;
     }
 
-    .caja {
+    .box {
         max-width: 250px;
     }
 }

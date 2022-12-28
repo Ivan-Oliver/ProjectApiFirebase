@@ -81,7 +81,7 @@ img{
     height: 250px;
 }
 
-.titulo{
+.title{
     font-family: Arial, Helvetica, sans-serif ; 
     font-size: 14px;
     color: #666;
@@ -90,7 +90,7 @@ img{
     font-style: italic;
 }
 
-.texto{
+.text{
     color: #666;
     margin-top: 12px;
     line-height: 29px;
@@ -161,7 +161,7 @@ button:active {
         font-size: 18px;
     }
 
-    .padre {
+    .parentbox {
         flex-direction: column;
     }
 }
@@ -184,13 +184,13 @@ button:active {
         font-size: 18px;
     }
 
-    .padre {
+    .parentbox {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: left;
     }
 
-    .caja {
+    .box {
         max-width: 250px;
     }
 }
