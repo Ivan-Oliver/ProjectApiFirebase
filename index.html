@@ -7,9 +7,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/styles/SignIn.css">
+    <!-- TOASTIFY --> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="/services/main.js" type="module"></script>
+    <!-- TOASTIFY --> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
 <body>
-    <!--    <script src="./services/api.js"></script>
-    <script src="./services/index.js"></script>-->
+    <header>
+        <h1>New York Time</h1>
+    
+
+    <input type="checkbox" id="btn-modal2">
+    <label for="btn-modal2" class="lbl-modal">SignUp
+    </label>
+    <div class="modal2" id="signupModal">
+        <div class="container">
+            <header>SignUp!</header>
+            <label for="btn-modal2" id="x-register" class="x">X</label>
+            <div class="content">
+                <form id="signup-form">
+                    <ul>
+                        <li>
+                            <label>Correo:</label>
+                            <input type="email" id="signup-email" placeholder="Email">
+                        </li>
+                        <li>
+                            <label>Password:</label>
+                            <input type="password" id="signup-password" placeholder="*******">
+                        </li>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="btn-modal">
+    <label for="btn-modal" class="lbl-modal">SignIn</label>
+    <div class="modal">
+        <div class="container">
+            <header>SignIn!</header>
+            <label for="btn-modal" class="x">X</label>
+            <div class="content">
+                <form id="login-form">
+                    <ul>
+                        <li>
+                            <label>Correo:</label>
+                            <input type="email" placeholder="Email">
+                        </li>
+                        <li>
+                            <label>Password:</label>
+                            <input type="password" placeholder="*******">
+                        </li>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
 </body>
 </html>
