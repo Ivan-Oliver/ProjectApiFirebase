@@ -26,6 +26,10 @@ body .modal2{
     align-items: center;
 }
 
+.btn-info {
+    margin: 10px;
+}
+
 button{
     color: #fff;
     border-radius: 3px;

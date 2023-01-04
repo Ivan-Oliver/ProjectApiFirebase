@@ -35,7 +35,7 @@
                         </li>
                         <li>
                             <label>Password:</label>
-                            <input type="password" id="signup-password" placeholder="*******">
+                            <input type="password" id="signup-password" placeholder="******">
                         </li>
                         <button type="submit" class="btn btn-primary">Register</button>
                     </ul>
@@ -49,19 +49,24 @@
     <div class="modal">
         <div class="container">
             <header>SignIn!</header>
-            <label for="btn-modal" class="x">X</label>
+            <label for="btn-modal" id="x-login" class="x">X</label>
             <div class="content">
-                <form id="login-form">
+                <form id="signin-form">
                     <ul>
                         <li>
                             <label>Correo:</label>
-                            <input type="email" placeholder="Email">
+                            <input type="email" id="signin-email" placeholder="Email">
                         </li>
                         <li>
                             <label>Password:</label>
-                            <input type="password" placeholder="*******">
+                            <input type="password" id="signin-password" placeholder="******">
                         </li>
                         <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" id="googleLogin" class="btn-info">Google</button>
+                        <button type="button" id="facebookLogin" class="btn-info">Facebook</button>
+                        <button type="button" id="githubLogin" class="btn-info">GitHub</button>
+
+
                     </ul>
                 </form>
             </div>

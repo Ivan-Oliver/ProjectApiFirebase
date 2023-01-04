@@ -1,3 +1,5 @@
 import "./signupForm.js"
-
-
+import "./signinForm.js"
+import "./googleSignin.js"
+import "./facebookLogin.js"
+import "./githubLogin.js"
