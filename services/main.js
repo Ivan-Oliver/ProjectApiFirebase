@@ -1,3 +1,4 @@
+import { signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"
 import "./signupForm.js"
 import "./signinForm.js"
 import "./googleSignin.js"

@@ -2,12 +2,10 @@ body{
     background-color: rgb(117, 103, 103);
 }
 h1{
+    margin-left: 80px;
+    font-size: 100px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-header{
-
-    background-color: rgb(79, 67, 67);
 }
 
 body .modal{
@@ -26,16 +24,23 @@ body .modal2{
     align-items: center;
 }
 
-.btn-info {
-    margin: 10px;
+.btn-Register{
+    margin-left:100px;
+
 }
 
+
 button{
+    padding: 4px;
+    margin: 10px;
     color: #fff;
     border-radius: 3px;
-    margin-left: 10em;
-    background-color: rgb(97, 97, 236);
+    background-color: black;
     border: white;
+}
+
+.btn-logout{
+    font-size: 54px;
 }
 
 .modal{
@@ -80,7 +85,7 @@ button{
 
 .container{
     width: 400px;
-    height: 200px;
+    height: 215px;
     margin: auto;
     background-color: #fff;
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);

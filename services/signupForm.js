@@ -18,7 +18,7 @@ signupForm.addEventListener('submit', async (e) => {
         register.click(); 
 
         showMessage("Welcome" + " " + userCredentials.user.email)
-    
+        location = '../views/dashboard.html'    
     } catch (error) {
         if (error.code === 'auth/invalid-email') {
             showMessage('Invalid Email', "error")

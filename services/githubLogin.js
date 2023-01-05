@@ -16,6 +16,7 @@ try {
     github.click();
     
     showMessage('Welcome' + " " + credentials.user.displayName, 'success')
+    location = '../views/dashboard.html'
 } catch (error) {
     console.log(error)
 }

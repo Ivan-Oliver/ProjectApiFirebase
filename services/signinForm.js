@@ -17,7 +17,7 @@ signInForm.addEventListener('submit', async e => {
         access.click(); 
 
         showMessage("Welcome" + " " + credentials.user.email)
-
+        location = '../views/dashboard.html'
     } catch (error) {
         if(error.code === "auth/wrong-password") {
             showMessage('Wrong password', 'error')
