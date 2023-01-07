@@ -1,6 +1,14 @@
 const spinnerElement = document.getElementById("spinner");
 const bookDetailsInfo = document.getElementById('bookBestSeller') // Selecciono el elemento del HTML 
-
+// Recuperamos del localStorage los datos del usuario y si existe mostramos en el div con id=userEmail el email del usuario
+const userInfo = window.localStorage.getItem('userInfo')
+const userDisplayName = window.localStorage.getItem('userDisplayName')
+if (userInfo) {
+   document.getElementById('userEmail').innerText = JSON.parse(userInfo).email
+}
+if (userDisplayName) {
+   document.getElementById('userName').innerText = JSON. parse(userDisplayName).displayName
+}
 
 async function callBookDetails() {
 

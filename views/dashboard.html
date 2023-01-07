@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,53 @@
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/styles/profile.css">
     <script src="https://kit.fontawesome.com/96d6f697fa.js" crossorigin="anonymous"></script>
+    <script defer src="/services/main.js" type="module"></script>
+    <script defer src="/services/logout.js" type="module"></script>
     <script defer src="/services/api.js"></script>
     <script defer src="/services/index.js"></script>
-    
-    
-    
+
+
+
 
 
 </head>
+
 <body>
-    
 
     <header>
-        <h1>New York Times <g class="r">®</g></h1>
+        <label class="btn-logout" id="logout">Logout</label>
+        <input type="checkbox" id="btn-modal">
+        <label for="btn-modal" class="lbl-modal">Profile
+        </label>
+        <div class="modal" id="profileModal">
+            <div class="container">
+                <header>Profile!</header>
+                <label for="btn-modal" id="x-profile" class="x">X</label>
+                <div class="content">
+                    <form id="profile-form">
+                        <ul>
+                            <li>
+                                <div id="userName"></div>
+                            </li>
+                            <li>
+                                <div id="userEmail"></div>
+                            </li>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h1>New York Times <g class="r">®</g>
+        </h1>
         <div class="best">
             <h2 class="sellers">Best Sellers</h2>
         </div>
+
     </header>
+
 
     <div class="lds-hourglass" id="spinner"></div>
 
@@ -34,4 +64,5 @@
 
 
 </body>
+
 </html>

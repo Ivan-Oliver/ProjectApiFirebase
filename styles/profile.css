@@ -1,13 +1,3 @@
-body{
-    background-color: #fff;
-}
-h1{
-    margin-left: 80px;
-    font-size: 100px;
-    color: #000;
-    font-family: newyorktimes;
-}
-
 body .modal{
     width: 100%;
     height: 100vh;
@@ -16,7 +6,7 @@ body .modal{
     align-items: center;
 }
 
-body .modal2{
+body .modal{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -32,24 +22,17 @@ body .modal2{
     padding: 4px;
 }
 
-.btnLogin{
-    color: white;
-    width: 90%;
-    background-color: black;
-}
-
-.btn-info{
-    padding: 4px;
-    margin: 35px;
-    color: #fff;
-    border-radius: 3px;
-    background-color: black;
-    border: white;
-}
-
 .btn-logout{
-    font-size: 54px;
+    font-weight: bolder;
+    color: black;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: white;
+    float: right;
+    cursor: pointer;
 }
+
 
 .modal{
     position: fixed;
@@ -61,33 +44,14 @@ body .modal2{
     visibility: hidden;
 }
 
-.modal2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-
 #btn-modal:checked ~ .modal{
     opacity: 1;
     visibility: visible;
 }
 
-#btn-modal2:checked ~ .modal2{
-    opacity: 1;
-    visibility: visible;
-}
 
 
 #btn-modal:checked ~ .modal .container{
-    transform: translateY(0%);
-}
-
-#btn-modal2:checked ~ .modal2 .container{
     transform: translateY(0%);
 }
 
@@ -124,11 +88,6 @@ body .modal2{
     display: none;
 }
 
-#btn-modal2{
-    display: none;
-}
-
-
 .lbl-modal{
     font-weight: bolder;
     color: black;
@@ -140,8 +99,4 @@ body .modal2{
     cursor: pointer;
 }
 
-li{
-    list-style: none;
-    width: 100px;
-    margin: 20px;
-}
+

@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebase
 import { auth } from './firebase.js'
 import { showMessage } from "./showMessage.js"
 
-const signupForm = document.querySelector("#signup-form")
+const signupForm = document.getElementById('signup-form')
 
 signupForm.addEventListener('submit', async (e) => {
     e.preventDefault()
@@ -14,11 +14,11 @@ signupForm.addEventListener('submit', async (e) => {
     try {
         const userCredentials = await createUserWithEmailAndPassword(auth, email, password)
         console.log(userCredentials)
-        const register = document.querySelector("#x-register") 
-        register.click(); 
+        const register = document.getElementById('x-register')
+        register.click();
 
         showMessage("Welcome" + " " + userCredentials.user.email)
-        location = '../views/dashboard.html'    
+        location = '../views/dashboard.html'
     } catch (error) {
         if (error.code === 'auth/invalid-email') {
             showMessage('Invalid Email', "error")
@@ -30,5 +30,5 @@ signupForm.addEventListener('submit', async (e) => {
             showMessage('Something went wrong', "error")
         }
     }
-   
+
 })

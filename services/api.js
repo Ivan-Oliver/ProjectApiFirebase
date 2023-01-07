@@ -1,6 +1,6 @@
 const localStorageKeyBooks = 'books'
-const localStorageKeyDetails = 'bookDetails'
-const localStorageListName = 'currentListName'
+const localStorageKeyDetails = 'detailsOfTheBooks'
+const localStorageListName = 'presentListName'
 
 const fetchListBooks = async () => {
 
