@@ -19,6 +19,11 @@ async function fetchAllData() {
    allBooks.setAttribute('class', 'parentbox')
    // Recorremos todos los libros y vamos pintando en el DOM los elementos HTML que necesitamos para montar los 
    //cuadros con la info de los libros, con sus class correspondientes para los estilos
+
+   /*
+    Corrección
+    Debemos usar FOR..OF
+   */
    for (let i = 0; i < list.length; i++) {
 
       const item = list[i]

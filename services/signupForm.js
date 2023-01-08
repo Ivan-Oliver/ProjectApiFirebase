@@ -20,6 +20,10 @@ signupForm.addEventListener('submit', async (e) => {
         showMessage("Welcome" + " " + userCredentials.user.email)
         location = '../views/dashboard.html'
     } catch (error) {
+        /*
+            Corrección
+            Debemos usar un Switch
+        */
         if (error.code === 'auth/invalid-email') {
             showMessage('Invalid Email', "error")
         } else if (error.code === 'auth/weak-password') {
